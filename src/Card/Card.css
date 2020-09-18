@@ -1,0 +1,139 @@
+.card-item {
+  font: 16px "Trebuchet MS";
+  width: 320px;
+}
+
+.card {
+  height: 480px;
+  border-radius: 8px;
+  border: 4px solid transparent;
+  background: white;
+  color: grey;
+  padding: 17px 45px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card_blue {
+  border: 4px solid rgb(59, 137, 253);
+}
+
+.card_blue.hover:hover {
+  border-color: rgb(132, 179, 250);
+}
+
+.card_blue.hover:hover .food-card__weight {
+  background: rgb(132, 179, 250);
+}
+
+.card_selected {
+  border-color: rgb(243, 31, 208);
+}
+
+.card_selected .card_weight {
+  background: rgb(243, 31, 208);
+}
+
+.card_selected.hover:hover {
+  border-color: rgb(233, 143, 218);
+}
+
+.card_selected.hover:hover .card_weight {
+  background: rgb(233, 143, 218);
+}
+
+.card_title,
+.card_variant {
+  font-weight: 800;
+  color: black;
+  font-size: 48px;
+}
+
+.card_title {
+  margin-bottom: -1px;
+  margin-left: -2px;
+}
+
+.card_variant {
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.card_info {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.card_portions span {
+  font-weight: 600;
+}
+
+.card_weight {
+  position: absolute;
+  background: rgb(59, 137, 253);
+  width: 81px;
+  height: 81px;
+  color: white;
+  bottom: 11px;
+  right: 11px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 21px;
+  z-index: 2;
+}
+
+.card_weight-inn {
+  font-size: 42px;
+  margin-bottom: -7px;
+}
+
+.card-item {
+  margin: 0px 30px 0px 30px;
+}
+
+.card_disable .card_header,
+.card_disable .card_title,
+.card_disable .card_variant,
+.card_disable .card_info {
+  color: #c9bdbd;
+}
+
+.card_disable .card_weight {
+  background: #c9bdbd;
+}
+
+.card_disable {
+  border-color: #808080;
+}
+
+.card_disable:hover {
+  cursor: default;
+}
+
+.card_disable:after {
+  opacity: 0.4;
+}
+
+.card_cat {
+  width: 100px;
+  height: 100px;
+  display: block;
+  position: absolute;
+  bottom: -92px;
+  left: -28px;
+  content: "";
+  width: 370px;
+  height: 361px;
+}
+
+.active_cat {
+  opacity: 0.4;
+}

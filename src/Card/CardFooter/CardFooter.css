@@ -1,0 +1,26 @@
+.card_footer,
+.card_footer_none,
+.card_footer_selected {
+  width: 100%;
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+.card_footer_none {
+  color: gold;
+}
+
+.card_footer_link {
+  color: rgb(59, 137, 253);
+  border-bottom: 1px dashed rgb(59, 137, 253);
+  text-decoration: none;
+}
+
+.card_footer_link:hover {
+  color: rgb(132, 179, 250);
+  border-bottom: 1px dashed rgb(132, 179, 250);
+  cursor: pointer;
+}
